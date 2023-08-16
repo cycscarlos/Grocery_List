@@ -1,0 +1,127 @@
+@import "header.css";
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:200,300,400,500,600,700,800,900&display=swap"); */
+
+.main {
+  position: relative;
+  font-family: "Segoe UI";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+.container {
+  position: relative;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .box {
+  position: relative;
+  width: 400px;
+  background: rgb(41, 68, 90, 0.8);
+  padding: 20px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  margin-top: -100px;
+  border-radius: 5px;
+}
+.container .box h2 {
+  font-size: 1.75em;
+  font-weight: 500;
+  /* color: #333; */
+  color: #fff;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+.container .box #grocery {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.container .box #grocery input {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  outline: none;
+}
+.container .box #grocery button {
+  background: #4bae4f;
+  color: #fff;
+  min-width: 100px;
+  font-weight: 500;
+  border: 1px solid #333;
+  outline: none;
+  cursor: pointer;
+}
+.container ol {
+  position: relative;
+  padding: 10px 20px 10px 40px;
+  width: 100%;
+  /* min-height: 398px; */
+  min-height: 350px;
+  /* background: #fff
+    repeating-linear-gradient(
+      transparent 0%,
+      transparent 99%,
+      #000 99%,
+      #000 100%
+    ); */
+  background: rgb(41, 68, 90, 0.8);
+  color: #fff;
+
+  background-size: 50px 50px; 
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+}
+
+.container ol li {
+  position: relative;
+  font-style: 1.5em;
+  height: 50px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.container ol li .remove {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background: url("../img/minus.png") no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container ol li.done p {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.2);
+}
+.container ol li.done p:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 35px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/done.png") no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
